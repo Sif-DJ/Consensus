@@ -1,0 +1,8 @@
+syntax = "proto3";
+option go_package = "Consensus/grpc/proto";
+
+message Empty {}
+
+service NodeService {
+    rpc PassBaton(Empty) returns (Empty);
+}
