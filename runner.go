@@ -1,7 +1,7 @@
 package main
 
 import (
-	client "Consensus/client"
+	client "Consensus/Client"
 )
 
 func main() {
