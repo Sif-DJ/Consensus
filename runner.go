@@ -1,10 +1,14 @@
 package main
 
+import (
+	client "Consensus/client"
+)
+
 func main() {
 
-	go startServer("5050", "5051")
-	go client.startServer("5051", "5052")
-	go client.startServer("5052", "5050")
+	go client.StartNode("5050", "5051", true)
+	go client.StartNode("5051", "5052", false)
+	go client.StartNode("5052", "5050", false)
 
 	for {
 
