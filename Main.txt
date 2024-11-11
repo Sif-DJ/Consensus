@@ -1,0 +1,33 @@
+2024/11/11 14:08:02 5050 listening
+2024/11/11 14:08:02 5052 listening
+2024/11/11 14:08:02 5051 listening
+2024/11/11 14:08:07 Server started
+2024/11/11 14:08:07 Server started
+2024/11/11 14:08:07 5050 passing baton to 5051
+2024/11/11 14:08:07 5051 does not have baton and  is sleeping
+2024/11/11 14:08:07 Server started
+2024/11/11 14:08:07 5052 does not have baton and  is sleeping
+2024/11/11 14:08:12 5051 has accessed the Critical Section
+2024/11/11 14:08:12 5052 does not have baton and  is sleeping
+2024/11/11 14:08:12 5050 does not have baton and  is sleeping
+2024/11/11 14:08:17 5052 does not have baton and  is sleeping
+2024/11/11 14:08:17 5051 passing baton to 5052
+2024/11/11 14:08:17 5050 does not have baton and  is sleeping
+2024/11/11 14:08:22 5052 has accessed the Critical Section
+2024/11/11 14:08:22 5051 does not have baton and  is sleeping
+2024/11/11 14:08:22 5050 does not have baton and  is sleeping
+2024/11/11 14:08:27 5052 passing baton to 5050
+2024/11/11 14:08:27 5051 does not have baton and  is sleeping
+2024/11/11 14:08:27 5050 has accessed the Critical Section
+2024/11/11 14:08:32 5052 does not have baton and  is sleeping
+2024/11/11 14:08:32 5051 does not have baton and  is sleeping
+2024/11/11 14:08:32 5050 passing baton to 5051
+2024/11/11 14:08:37 5052 does not have baton and  is sleeping
+2024/11/11 14:08:37 5051 has accessed the Critical Section
+2024/11/11 14:08:37 5050 does not have baton and  is sleeping
+2024/11/11 14:08:42 5051 passing baton to 5052
+2024/11/11 14:08:42 5052 does not have baton and  is sleeping
+2024/11/11 14:08:42 5050 does not have baton and  is sleeping
+2024/11/11 14:08:47 5052 has accessed the Critical Section
+2024/11/11 14:08:47 5051 does not have baton and  is sleeping
+2024/11/11 14:08:47 5050 does not have baton and  is sleeping
