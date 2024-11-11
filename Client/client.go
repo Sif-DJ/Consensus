@@ -4,6 +4,7 @@ import (
 	proto "Consensus/grpc"
 	"context"
 	"log"
+	"math/rand"
 	"net"
 	"time"
 
@@ -53,13 +54,19 @@ func StartNode(address string, neighbour string, baton bool) {
 
 	for {
 		if srv.hasBaton {
-			srv.hasBaton = false
-			log.Println(address + " passing baton to " + neighbour)
-			client.PassBaton(context.Background(), &proto.Empty{})
-			time.Sleep(5 * time.Second)
+			if rand.Intn(2) == 0 {
+				log.Println(address + " has accessed the Critical Section")
+				time.Sleep(5 * time.Second)
+			} else {
+				srv.hasBaton = false
+				log.Println(address + " passing baton to " + neighbour)
+				client.PassBaton(context.Background(), &proto.Empty{})
+				time.Sleep(5 * time.Second)
+			}
 		} else {
-			log.Println(address + " is sleeping")
+			log.Println(address + " does not have baton and  is sleeping")
 			time.Sleep(5 * time.Second)
 		}
+
 	}
 }
